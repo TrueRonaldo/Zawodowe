@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="utf-8">
+    <title>Tytuł zadania</title>
+</head>
+<body>
+    <form action="" method="post" onsubmit="oblicz(this.form)">
+        Podaj nr tygodnia: <input name="nr" type="number" /><br/><br/>
+        <input type="submit" value="OBLICZ" /><br/><br/>
+        Dzień tygodnia to: <input name="dzien" type="text" />
+    </form>
+    <script type="text/javascript">
+        var form = document.getElementById('form')
+        function oblicz(form) {
+            var dzien;
+            var nrDnia = Number(form.nr.value);
+            if (nrDnia == 1) dzien = 'poniedziałek';
+            if (nrDnia == 2) dzien = 'wtorek';
+            if (nrDnia == 3) dzien = 'środa';
+            if (nrDnia == 4) dzien = 'czwartek';
+            if (nrDnia == 5) dzien = 'piątek';
+            if (nrDnia == 6) dzien = 'sobota';
+            if (nrDnia == 7) dzien = 'niedziela';
+            form.dzien.value = dzien;
+        }
+    </script>
+</body>
+</html>
