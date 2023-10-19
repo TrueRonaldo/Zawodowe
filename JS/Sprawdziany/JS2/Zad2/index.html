@@ -5,18 +5,19 @@
         <title>Tytuł zadania</title>
     </head>
     <body>
-        <form action="" method="post" onsubmit="">
+        <form action="" method="post">
             Podaj nr tygodnia: <input name="nr" type="number" /><br /><br />
-            <input name="a" type="checkbox" />
             <input type="button" value="OBLICZ" onclick="oblicz(this.form)" /><br /><br />
             Dzień tygodnia to: <input name="dzien" type="text" />
         </form>
         <script type="text/javascript">
             function oblicz(form) {
-                console.log(new FormData(form).get("a"));
-                console.dir(form);
                 var dzien;
                 var nrDnia = Number(form.nr.value);
+                if (nrDnia < 1 || nrDnia > 7) {
+                    alert("Podaj prawidłowy nr tygodnia");
+                    return;
+                }
                 if (nrDnia == 1) dzien = "poniedziałek";
                 if (nrDnia == 2) dzien = "wtorek";
                 if (nrDnia == 3) dzien = "środa";
