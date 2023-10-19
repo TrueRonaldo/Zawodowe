@@ -1,0 +1,16 @@
+﻿<!doctype html>
+<html lang="pl">
+    <head>
+        <meta charset="utf-8" />
+        <title>Zadanie 2</title>
+    </head>
+    <body>
+        <script type="text/javascript">
+            var h = Number(prompt("Podaj wysokość trójkąta"));
+            for (i = h; i > 0; i--) {
+                var znaki = new Array(i).fill(0).reduce((a, b) => (a += "@"), "");
+                document.write(znaki + "<br />");
+            }
+        </script>
+    </body>
+</html>

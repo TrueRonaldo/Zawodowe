@@ -1,0 +1,19 @@
+﻿<!doctype html>
+<html lang="pl">
+    <head>
+        <meta charset="utf-8" />
+        <title>Pętla FOR - suma podawanych w pętli liczb</title>
+    </head>
+    <body>
+        <script type="text/javascript">
+            var x;
+            var n = prompt("Podaj liczbę komórek");
+            document.write("<table border=1><tr>");
+            for (i = 1; i <= n; i++) {
+                x = prompt("Podaj " + i + ". wartość");
+                document.write("<td>" + x + "</td>");
+            }
+            document.write("</tr></table>");
+        </script>
+    </body>
+</html>

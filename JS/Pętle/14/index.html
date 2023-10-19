@@ -1,0 +1,24 @@
+﻿<!doctype html>
+<html lang="pl">
+    <head>
+        <meta charset="utf-8" />
+        <title>Pętla FOR - suma podawanych w pętli liczb</title>
+    </head>
+    <body>
+        <script type="text/javascript">
+            var x;
+            var n = prompt("Podaj liczbę składników sumy");
+            var s = 0;
+            document.write("Suma liczb: ");
+            for (i = 1; i <= n; i++) {
+                x = Number(prompt("Podaj " + i + " liczbę"));
+
+                document.write(x);
+                if (i < n) document.write("+");
+                else document.write("=");
+                s += i;
+            }
+            document.write(s);
+        </script>
+    </body>
+</html>

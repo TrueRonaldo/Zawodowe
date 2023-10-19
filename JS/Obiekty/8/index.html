@@ -1,0 +1,31 @@
+﻿<!doctype html>
+<html lang="pl">
+    <head>
+        <meta charset="utf-8" />
+        <title>Obiekty - Mathv</title>
+    </head>
+    <body>
+        <script type="text/javascript">
+            // Wprowadzenie liczb
+            var x = parseFloat(prompt("Podaj liczbę x"));
+            var y = parseFloat(prompt("Podaj liczbę y"));
+
+            // Znajdowanie liczby największej
+            var maks = Math.max(x, y);
+            document.write("Twoje liczby to: " + x + " i " + y);
+            document.write("<br /> Liczbą największą jest: " + maks);
+
+            // Znajdowanie liczby najmniejszej
+            var mini = Math.min(x, y);
+            document.write("<br /> Liczbą najmniejszą jest: " + mini);
+
+            // Obliczanie x do potęgi y
+            var potega = Math.pow(x, y);
+            document.write("<br /> Potega x do y to: " + potega);
+
+            // Obliczanie pierwiastka kwadratowego do x
+            var pierw = Math.sqrt(x);
+            document.write("<br /> Pierwiastek kwadratowy z x to: " + pierw);
+        </script>
+    </body>
+</html>

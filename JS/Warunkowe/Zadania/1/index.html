@@ -1,0 +1,22 @@
+﻿<!doctype html>
+<html lang="pl">
+    <head>
+        <meta charset="utf-8" />
+        <title>Zadanie 1</title>
+    </head>
+    <body>
+        <script type="text/javascript">
+            alert("Skrypt sprawdza, czy wprowadzona liczba jest mniejsza od 100 i podzielna przez 3");
+            x = parseFloat(prompt("Podaj liczbę calkowitą"));
+            if (x < 100 && x % 3 == 0)
+                document.write("Liczba <b>" + x + "</b> jest mniejsza od 100 i podzielna przez 3.");
+            else if (x < 100 && x % 3 != 0)
+                document.write("Liczba <b>" + x + "</b> jest mniejsza od 100 i niepodzielna przez 3.");
+            else if (x > 100 && x % 3 == 0)
+                document.write("Liczba <b>" + x + "</b> jest większa od 100 i podzielna przez 3.");
+            else if (x > 100 && x % 3 != 0)
+                document.write("Liczba <b>" + x + "</b> jest większa od 100 i niepodzielna przez 3.");
+            else document.write("Podano liczbę 100 niepodzielną przez 3.");
+        </script>
+    </body>
+</html>

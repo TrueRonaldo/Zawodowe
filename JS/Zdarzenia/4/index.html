@@ -1,0 +1,22 @@
+﻿<!doctype html>
+<html lang="pl">
+    <head>
+        <meta charset="utf-8" />
+        <title>Zdarzenia 4 - zmiana koloru czcionki po najechaniu i zjechaniu</title>
+    </head>
+    <body>
+        <h1 onClick="kol_1()" onMouseOver="kol_2()" onMouseLeave="kol_3()">Jak naciśniesz to czcionka zmieni kolor</h1>
+
+        <script type="text/javascript">
+            function kol_1() {
+                document.fgColor = "blue";
+            }
+            function kol_2() {
+                document.fgColor = "red";
+            }
+            function kol_3() {
+                document.bgColor = "yellow";
+            }
+        </script>
+    </body>
+</html>

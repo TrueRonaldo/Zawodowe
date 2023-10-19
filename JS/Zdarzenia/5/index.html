@@ -1,0 +1,35 @@
+﻿<!doctype html>
+<html lang="pl">
+    <head>
+        <meta charset="utf-8" />
+        <title>Metoda getElementById</title>
+    </head>
+    <style>
+        body {
+            background-color: lightblue;
+        }
+        #pole1,
+        #przycisk1,
+        #wartosc {
+            background-color: lime;
+            color: #000;
+        }
+        #wartosc {
+            width: fit-content;
+        }
+    </style>
+    <body>
+        Wprowadź wartość:
+        <input type="number" id="pole1" min="1" max="10" /> <br /><br />
+        <button type="button" id="przycisk1" onClick="pisz()">Zatwierdź</button> <br /><br />
+        <div id="wartosc">Wprowadzona wartość:</div>
+
+        <script type="text/javascript">
+            var pole = document.getElementById("wartosc");
+            function pisz() {
+                var poleTekst = document.getElementById("pole1").value;
+                pole.innerHTML += poleTekst;
+            }
+        </script>
+    </body>
+</html>
