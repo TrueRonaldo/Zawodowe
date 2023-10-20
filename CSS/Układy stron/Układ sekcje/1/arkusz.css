@@ -1,0 +1,62 @@
+body {
+    margin: 0;
+    text-align: center;
+}
+a {
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+    text-align: left;
+    padding-left: 15px;
+    line-height: 50px;
+}
+
+#box {
+    height: 900px;
+}
+header {
+    height: 10%;
+    background-color: grey;
+    line-height: 90px;
+}
+header h1 {
+    margin: 0;
+}
+nav {
+    width: 10%;
+    height: 80%;
+    float: left;
+    background-color: darkgrey;
+}
+section {
+    width: 45%;
+    height: 80%;
+    float: left;
+    background-color: silver;
+}
+article {
+    background-color: red;
+    height: 80%;
+    float: left;
+    width: 45%;
+    margin-left: 3%;
+}
+article#a2 {
+    background-color: yellow;
+}
+aside {
+    width: 45%;
+    height: 80%;
+    float: left;
+    background-color: pink;
+}
+
+footer {
+    font-size: 16pt;
+    line-height: 90px;
+    clear: both;
+    height: 16.5%;
+    background-color: gray;
+    color: #fff;
+}

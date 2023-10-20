@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="pl">
+    <head>
+        <meta charset="utf-8" />
+        <title>Formularz A</title>
+        <style>
+            input {
+                accent-color: red;
+            }
+        </style>
+    </head>
+    <body bgcolor="#222">
+        <form method="POST" action="zsp@xyz.pl">
+            <h2>Formularz ogłoszeniowy</h2>
+            <fieldset>
+                <legend>Zainteresowania</legend>
+                <label>
+                    Muzyka
+                    <input type="checkbox" name="hobby" value="muzyka" />
+                </label>
+                <label>
+                    Sport
+                    <input type="checkbox" name="hobby" value="sport" />
+                </label>
+                <label>
+                    Komputery
+                    <input type="checkbox" name="hobby" value="komputery" checked />
+                </label>
+                <br />
+                <br />
+                <label>
+                    Film
+                    <input type="checkbox" name="hobby" value="film" />
+                </label>
+                <label>
+                    Taniec
+                    <input type="checkbox" name="hobby" value="taniec" />
+                </label>
+                <label>
+                    Motoryzacja
+                    <input type="checkbox" name="hobby" value="motoryzacja" />
+                </label>
+            </fieldset>
+            <br />
+            <fieldset>
+                <legend>Wykształcenie</legend>
+                <label>
+                    Podstawowe
+                    <input type="radio" name="wykszt" value="podstawowe" />
+                </label>
+                <label>
+                    Średnie
+                    <input type="radio" name="wykszt" value="srednie" />
+                </label>
+                <label>
+                    Wyższe
+                    <input type="radio" name="wykszt" value="wyzsze" />
+                </label>
+            </fieldset>
+            <br />
+            <fieldset>
+                <legend>Dzień tygodnia</legend>
+                <select name="day" size="3">
+                    <option>Poniedziałek</option>
+                    <option>Wtorek</option>
+                    <option>Środa</option>
+                    <option>Czwartek</option>
+                    <option>Piątek</option>
+                    <option>Sobota</option>
+                    <option>Niedziela</option>
+                </select>
+            </fieldset>
+            <br />
+            <button type="reset">Wyczyść</button>
+            <button>Wyślij</button>
+        </form>
+    </body>
+</html>

@@ -1,0 +1,21 @@
+﻿<!doctype html>
+<html lang="pl">
+    <head>
+        <meta charset="utf-8" />
+        <title>Zmiana zawartości bloku</title>
+    </head>
+    <body leftmargin="50" topmargin="50">
+        <button id="przycisk1">Zmiana napisu</button><br /><br /><br />
+
+        <h2 id="blok1">Przed meczem z Mołdawią :-></h2>
+
+        <script type="text/javascript">
+            function zmianaNapisu() {
+                var b1 = document.getElementById("blok1");
+                b1.innerHTML = "Po meczu z Mołdawią :-<";
+            }
+            var p1 = document.getElementById("przycisk1");
+            p1.onclick = zmianaNapisu;
+        </script>
+    </body>
+</html>

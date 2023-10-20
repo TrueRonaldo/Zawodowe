@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="pl">
+    <head>
+        <meta charset="utf-8" />
+        <title>Formularz HTML5</title>
+    </head>
+    <body bgcolor="firebrick">
+        <form method="POST" action="zsp@xyz.pl">
+            <label>
+                E-mail:
+                <input type="email" placeholder="Wpisz swój adres email" name="poczta" />
+            </label>
+            <br />
+            <br />
+            <label>
+                Podaj liczbe osób:
+                <input type="number" name="osoby" min="0" max="40" />
+            </label>
+            <label>
+                Lub:
+                <input type="range" name="osoby2" min="0" max="5" />
+                <output></output>
+            </label>
+            <br />
+            <br />
+            <label>
+                Wybierz kolor:
+                <input type="color" name="kolor" />
+            </label>
+            <br />
+            <br />
+            <label>
+                Data:
+                <input type="date" name="data" />
+            </label>
+            <br />
+            <br />
+            <button>ZATWIERDŹ</button>
+        </form>
+        <script>
+            const range = document.querySelector("input");
+            range.addEventListener("change", (e) => {
+                const out = document.querySelector("output");
+                out.textContent = e.target.value;
+            });
+        </script>
+    </body>
+</html>

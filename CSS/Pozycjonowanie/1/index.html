@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="pl">
+    <head>
+        <meta charset="utf-8" />
+        <title>Pozycjonowanie 1</title>
+        <style>
+            body {
+                margin: 0;
+                padding: 0;
+                background-image: url("kratka.gif");
+            }
+            #c1 {
+                position: absolute;
+                top: 160px;
+                left: 80px;
+                z-index: 1;
+            }
+            #c2 {
+                position: absolute;
+                top: 200px;
+                left: 120px;
+            }
+            #b1 {
+                width: 200px;
+                height: 200px;
+                background-color: rgba(0, 0, 0, 0.5);
+                position: absolute;
+                top: 250px;
+                left: 180px;
+                color: white;
+                z-index: 2;
+                border: 5px solid #000;
+            }
+        </style>
+    </head>
+    <body>
+        <img src="css.png" id="c1" />
+        <img src="css2.png" id="c2" />
+        <div id="b1">Blok 1</div>
+    </body>
+</html>

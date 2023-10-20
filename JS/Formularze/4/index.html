@@ -1,0 +1,52 @@
+﻿<!doctype html>
+<html lang="pl">
+    <head>
+        <meta charset="utf-8" />
+        <title>Kalkulator</title>
+        <style>
+            #wynik {
+                border: 0;
+            }
+            #a,
+            #b {
+                width: 50px;
+            }
+        </style>
+    </head>
+    <body>
+        <form name="formularz2" method="post" action="">
+            <table>
+                <tr>
+                    <td><input id="a" type="number" name="liczba1" /></td>
+                    <td>
+                        <select name="select">
+                            <option value="d1">+</option>
+                            <option value="d2">-</option>
+                            <option value="d3">*</option>
+                            <option value="d4">/</option>
+                        </select>
+                    </td>
+                    <td><input id="b" type="number" name="liczba2" /></td>
+                    <td>=</td>
+                    <td><input type="text" name="wynik" id="wynik" /></td>
+                    <td name="wynik"></td>
+                </tr>
+            </table>
+            <br />
+            <input type="button" value="Oblicz" onClick="licz(this.form)" />
+        </form>
+        <script type="text/javascript">
+            function licz(form) {
+                var x = Number(form.liczba1.value);
+                var y = Number(form.liczba2.value);
+                var znak = form.select.value;
+                var wynik;
+                if (znak == "d1") wynik = x + y;
+                else if (znak == "d2") wynik = x - y;
+                else if (znak == "d3") wynik = x * y;
+                else if (znak == "d4") wynik = x / y;
+                form.wynik.value = wynik;
+            }
+        </script>
+    </body>
+</html>

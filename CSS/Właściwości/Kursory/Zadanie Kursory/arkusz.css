@@ -1,0 +1,24 @@
+body {
+    background-color: yellow;
+}
+li {
+    width: min-content;
+}
+li:nth-child(1) {
+    cursor: url("Figury/trojkat.png"), pointer;
+}
+li:nth-child(4) {
+    cursor: url("Figury/prostokat.png"), pointer;
+}
+li:nth-child(7) {
+    cursor: url("Figury/kwadrat.png"), pointer;
+}
+li:nth-child(10) {
+    cursor: url("Figury/pieciakat.png"), pointer;
+}
+li:nth-child(13) {
+    cursor: url("Figury/elipsa.png"), pointer;
+}
+li:nth-child(16) {
+    cursor: url("Figury/kolo.png"), pointer;
+}

@@ -1,0 +1,32 @@
+﻿<!doctype html>
+<html lang="pl">
+    <head>
+        <meta charset="utf-8" />
+        <title>Obliczanie pola i obwodu</title>
+    </head>
+    <body>
+        <form name="formularz2" method="post" action="">
+            Podaj długosć boku a: <input type="text" size="2" name="a" /><br /><br />
+            Podaj długosć boku b: <input type="text" size="2" name="b" /><br /><br />
+
+            <input type="button" value="OBLICZ" onClick="obliczanie(this.form)" /><br /><br />
+
+            Obwód prostokąta: <input type="text" size="2" name="o" />cm<br /><br />
+            Pole prostokąta: <input type="text" size="2" name="p" />cm<sup>2</sup><br /><br />
+        </form>
+        <script type="text/javascript">
+            function obliczanie(form2) {
+                var a = Number(form2.a.value);
+                var b = Number(form2.b.value);
+                if (isNaN(a) || isNaN(b)) alert("Wprowadź wartości liczbowe");
+                else {
+                    var P = a * b;
+                    var L = 2 * (a + b);
+
+                    form2.o.value = L;
+                    form2.p.value = P;
+                }
+            }
+        </script>
+    </body>
+</html>

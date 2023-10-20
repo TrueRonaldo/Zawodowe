@@ -1,0 +1,52 @@
+﻿<!doctype html>
+<html lang="pl">
+    <head>
+        <meta charset="utf-8" />
+        <title>Odliczanie czasu</title>
+        <style type="text/css">
+            #zegar {
+                font-family: Courier, sans-serif;
+                color: red;
+                background-color: black;
+                width: 50%;
+                text-align: center;
+                margin-left: 25%;
+                font-weight: 600;
+                padding: 5px;
+                border: 4px outset rgb(100, 100, 100);
+                text-shadow: 0px 0px 10px red;
+                transition: 200ms;
+                cursor: pointer;
+            }
+            #zegar:hover {
+                scale: 1.1;
+            }
+            #zegar:active {
+                scale: 0.95;
+            }
+        </style>
+        <script type="text/javascript">
+            function odliczanie() {
+                var dzisiaj = new Date();
+
+                var dzien = dzisiaj.getDate();
+                var miesiac = dzisiaj.getMonth() + 1;
+                var rok = dzisiaj.getFullYear();
+
+                var godzina = dzisiaj.getHours();
+                if (godzina < 10) godzina = 0 + godzina;
+                var minuta = dzisiaj.getMinutes();
+                if (minuta < 10) minuta = "0" + minuta;
+                var sekundy = dzisiaj.getSeconds();
+                if (sekundy < 10) sekundy = "0" + sekundy;
+
+                document.getElementById("zegar").innerHTML =
+                    dzien + "/" + miesiac + "/" + rok + " | " + godzina + ":" + minuta + ":" + sekundy;
+                setTimeout(odliczanie, 1000);
+            }
+        </script>
+    </head>
+    <body onload="odliczanie()">
+        <div id="zegar"></div>
+    </body>
+</html>
