@@ -5,10 +5,10 @@
 	<title>Funkcje print i echo</title>
 </head>
 <body>
-  <?php 
-	print("Tekst - instrukcja print <br/>");
-	echo("Tekst - instrukcja echo");
-	echo("<br>".(2+5))
+  <?php
+  print 'Tekst - instrukcja print <br/>';
+  echo 'Tekst - instrukcja echo';
+  echo '<br>' . (2 + 5);
   ?>
 </body>
 </html>

@@ -6,10 +6,10 @@
     </head>
     <body>
         <script type="text/javascript">
-            var h = Number(prompt("Podaj wysokość trójkąta"));
+            var h = Number(prompt('Podaj wysokość trójkąta'));
             for (i = h; i > 0; i--) {
-                var znaki = new Array(i).fill(0).reduce((a, b) => (a += "@"), "");
-                document.write(znaki + "<br />");
+                var znaki = new Array(i).fill(0).reduce((a, b) => (a += '@'), '');
+                document.write(znaki + '<br />');
             }
         </script>
     </body>

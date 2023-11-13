@@ -5,8 +5,6 @@
 	<title>Pierwszy skrypt - wersja PHP</title>
 </head>
 <body>
-  <?php 
-	phpinfo();
-  ?>
+  <?php phpinfo(); ?>
 </body>
 </html>

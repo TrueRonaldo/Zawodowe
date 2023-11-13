@@ -7,16 +7,15 @@
     <body>
         <script type="text/javascript">
             function kalk() {
-                var znak = prompt("Podaj znak działania");
-                if (!(znak == "+" || znak == "-" || znak == "/" || znak == "*"))
-                    return alert("Podany znak działania jest niepoprawny.");
-                var a = Number(prompt("Podaj pierwszą liczbę"));
-                var b = Number(prompt("Podaj drugą liczbę"));
-                if (isNaN(a) || isNaN(b)) return alert("Podane liczby są nieprawidłowe");
-                if (znak == "+") document.write("Wynik działania to " + (a + b));
-                if (znak == "-") document.write("Wynik działania to " + (a - b));
-                if (znak == "*") document.write("Wynik działania to " + a * b);
-                if (znak == "/") document.write("Wynik działania to " + a / b);
+                var znak = prompt('Podaj znak działania');
+                if (!(znak == '+' || znak == '-' || znak == '/' || znak == '*')) return alert('Podany znak działania jest niepoprawny.');
+                var a = Number(prompt('Podaj pierwszą liczbę'));
+                var b = Number(prompt('Podaj drugą liczbę'));
+                if (isNaN(a) || isNaN(b)) return alert('Podane liczby są nieprawidłowe');
+                if (znak == '+') document.write('Wynik działania to ' + (a + b));
+                if (znak == '-') document.write('Wynik działania to ' + (a - b));
+                if (znak == '*') document.write('Wynik działania to ' + a * b);
+                if (znak == '/') document.write('Wynik działania to ' + a / b);
             }
             kalk();
         </script>

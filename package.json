@@ -11,5 +11,9 @@
     "license": "ISC",
     "dependencies": {
         "prettier": "^3.0.3"
+    },
+    "devDependencies": {
+        "@prettier/plugin-php": "^0.21.0",
+        "eslint": "^8.53.0"
     }
 }

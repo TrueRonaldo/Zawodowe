@@ -7,12 +7,12 @@
     <body>
         <script type="text/javascript">
             function obliczPotege() {
-                var x = Number(prompt("Podaj liczbę"));
-                if (isNaN(x)) return alert("Liczba jest nieprawidłowa");
-                var odp = Number(prompt("Jaki jest wynik " + x + " do kwadratu?"));
+                var x = Number(prompt('Podaj liczbę'));
+                if (isNaN(x)) return alert('Liczba jest nieprawidłowa');
+                var odp = Number(prompt('Jaki jest wynik ' + x + ' do kwadratu?'));
                 var xPotega = x ** 2;
-                if (odp == xPotega) document.write("Brawo! Wynik poprawny");
-                else document.write("Źle! " + x + "<sup>2</sup> = " + xPotega);
+                if (odp == xPotega) document.write('Brawo! Wynik poprawny');
+                else document.write('Źle! ' + x + '<sup>2</sup> = ' + xPotega);
             }
             obliczPotege();
         </script>

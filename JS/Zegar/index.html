@@ -36,12 +36,12 @@
                 var godzina = dzisiaj.getHours();
                 if (godzina < 10) godzina = 0 + godzina;
                 var minuta = dzisiaj.getMinutes();
-                if (minuta < 10) minuta = "0" + minuta;
+                if (minuta < 10) minuta = '0' + minuta;
                 var sekundy = dzisiaj.getSeconds();
-                if (sekundy < 10) sekundy = "0" + sekundy;
+                if (sekundy < 10) sekundy = '0' + sekundy;
 
-                document.getElementById("zegar").innerHTML =
-                    dzien + "/" + miesiac + "/" + rok + " | " + godzina + ":" + minuta + ":" + sekundy;
+                document.getElementById('zegar').innerHTML =
+                    dzien + '/' + miesiac + '/' + rok + ' | ' + godzina + ':' + minuta + ':' + sekundy;
                 setTimeout(odliczanie, 1000);
             }
         </script>
